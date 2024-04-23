@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+    <title>EPROJECT</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+    <section>
+        <div class="container py-100">
+            <div class="title">Frequentaly Asked Qestions</div>
+            <div class="faq">
+                <div class="q-a">
+                    <div class="q f-wrap d-flex spacebetween align-center"><span>What does the term "Full-Tang" mean?</span><i class="ri-arrow-right-s-line "></i></div>
+                    <div class="a">"Full-Tang" refers to knives where the blade goes all the way down through the handle
+                        to
+                        the end of the grip Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam in corporis dolor nisi recusandae sapiente placeat est deserunt nihil distinctio obcaecati ipsa, sequi ea illum, explicabo impedit harum fuga odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quas veritatis placeat beatae pariatur culpa tempora doloremque rem praesentium, cum fugiat aliquid alias accusantium eaque iusto amet, numquam cumque suscipit? Suscipit veniam labore quisquam ratione unde? Consequatur magnam laudantium iure iste eveniet eius. Molestiae asperiores, ab et similique fuga quae.</div>
+                </div>
+                <div class="q-a">
+                    <div class="q d-flex f-wrap align-center spacebetween"><span>What is a bolster, and what benefits does it provide?</span>
+                        <i class="ri-arrow-right-s-line "></i>
+                    </div>
+                    <div class="a">A knife bolster is the thick section between the handle and the blade, and it
+                        strengthens
+                        the knife, and gives better balance and control. However, there is much disagreement on whether
+                        or
+                        not it is necessary. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laboriosam sunt sed non. Nostrum porro quisquam, repellendus aut officia totam iure, eos consectetur eaque expedita voluptas voluptates odio! Similique corporis sit adipisci tempore delectus quo aliquam saepe, exercitationem deleniti omnis nostrum voluptas fugiat repudiandae eos totam nemo maiores laborum quas veniam illo alias temporibus. Rem officiis ut eum similique doloremque!</div>
+                </div>
+                <div class="q-a">
+                    <div class="q d-flex f-wrap align-center spacebetween"><span>What are the differences between forged and laser-cutstamped knives?</span>
+                        <i class="ri-arrow-right-s-line "></i></div>
+                    <div class="a">Forged knives are stronger and retain their edge longer than stamped knives, which
+                        have
+                        more flexible blades. In the case of Wusthof, their forged knives go through 40 different steps
+                        in
+                        their factory, where the laser-cut knives go through 14 steps. Also, their forged knives include
+                        a
+                        bolster, which balances the knife and protects fingers, although bolsters can also be added to
+                        laser-cut knives. Laser-cut stamped knives can be of excellent quadivty too, however, and they
+                        are
+                        more economically priced.</div>
+                </div>
+                <div class="q-a">
+                    <div class="q d-flex f-wrap align-center spacebetween">
+                        <span>How should I wash my knives?</span>
+                        <i class="ri-arrow-right-s-line "></i>
+                    </div>
+                    <div class="a">Always wash them by hand with hot, soapy water. Never drop them in with a sinkful of
+                        dirty dishes, or run them through a dishwasher, which will not only bang them together, but
+                        damage
+                        the blade through excessive heating. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quo sunt. Corporis qui a, vel alias beatae repellat nihil sint laboriosam explicabo, pariatur labore quasi dolore quo nulla odit illum consectetur architecto omnis doloremque voluptatem. Itaque laudantium modi fugit. Expedita iste sequi alias ex ea, quibusdam sed blanditiis esse doloribus quae tempore modi consectetur nulla architecto rerum. Cumque amet neque dolore maxime laboriosam quam esse veniam minus facilis, quidem autem, voluptatibus sit quis numquam? Ducimus velit eaque quod delectus placeat?</div>
+                </div>
+                <div class="q-a">
+                    <div class="q d-flex f-wrap align-center spacebetween">
+                        <span>Do I need to spend a lot of money for knives?
+                        </span>
+                        <i class="ri-arrow-right-s-line "></i>
+                        </div>
+                    
+                    <div class="a">The more you can spend, the better, but there are some less expensive options, such
+                        as
+                        Victorinox, which also make Swiss Army Knives. The blades are very sharp, and well-made for the
+                        price. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis esse eum magnam veniam nobis fugit pariatur vitae! Mollitia enim nihil saepe reiciendis minima quidem provident eligendi blanditiis, eos culpa vero ut exercitationem sapiente maiores nulla itaque facilis odit tempore. Atque veritatis ipsum consequuntur placeat corporis provident, corrupti error labore omnis.</div>
+                </div>
+
+
+            </div>
+            <div class="cursor"></div>
+                <div class="cursor2"></div>
+    </section>
+    <script>
+         var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        });
+    </script>
+
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+        
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>

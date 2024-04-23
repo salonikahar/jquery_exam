@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jb {
+    justify-content: space-evenly;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.jc {
+    justify-content: center;
+}
+.rotate{
+    rotate: 90deg;
+}
+.ac {
+    align-content: center;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+body{
+    background-color:#F4F0ED;
+}
+/* accrodian */
+
+.title{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight:bolder;
+}
+.q {
+    font-weight: bold;
+    font-size: 120%;
+    /* border-bottom: 1px #ccc solid; */
+    cursor: pointer;
+    color: #fff;
+    padding: 1.25rem;
+    
+}
+
+.q-a:nth-child(2),
+.q-a:nth-child(4){
+    background-color: rgb(70, 75, 77);
+}
+
+.q-a:nth-child(1),
+.q-a:nth-child(3),
+.q-a:nth-child(5) {
+    background: #262323 !important;
+    color: #fff;
+}
+
+.a {
+    font-weight: bold;
+    color: #000;
+    background: #F4F0ED;
+    display: none;
+}
+
+/* cursor */
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid lightgray;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 100;
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(109, 193, 193);
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 100;
+  }
+
+  /* preloader */
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    
+  }
